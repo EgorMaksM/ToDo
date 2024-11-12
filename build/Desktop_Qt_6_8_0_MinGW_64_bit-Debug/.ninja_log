@@ -1,0 +1,11 @@
+# ninja log v6
+6	87	7531218855350339	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	3ddc5c9d3a4f0afc
+88	959	7531218864107350	ToDo_autogen/timestamp	2c3f7267989e7bf9
+88	959	7531218864107350	ToDo_autogen/mocs_compilation.cpp	2c3f7267989e7bf9
+88	959	7531218864107350	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/timestamp	2c3f7267989e7bf9
+88	959	7531218864107350	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/mocs_compilation.cpp	2c3f7267989e7bf9
+997	2697	7531218865265258	CMakeFiles/ToDo.dir/ToDo_autogen/mocs_compilation.cpp.obj	c73ba712f38300da
+1016	2837	7531218865454411	CMakeFiles/ToDo.dir/main.cpp.obj	51f9cb26441c8f2a
+1033	2898	7531218865619892	CMakeFiles/ToDo.dir/mainwindow.cpp.obj	b713ce062c7ec8e4
+1063	3036	7531218865924525	CMakeFiles/ToDo.dir/newtaskwidget.cpp.obj	5a81cd8a0b06ff6a
+3037	3459	7531218885669902	ToDo.exe	2181bb1a44798216
