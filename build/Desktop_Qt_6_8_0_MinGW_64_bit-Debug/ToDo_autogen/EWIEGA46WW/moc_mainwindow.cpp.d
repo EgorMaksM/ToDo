@@ -146,8 +146,12 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QStackedWidget \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstackedwidget.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -358,4 +362,5 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h

@@ -15,7 +15,6 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -25,9 +24,6 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QStackedWidget *stackedWidget;
-    QWidget *page;
-    QWidget *page_2;
     QStatusBar *statusbar;
     QMenuBar *menubar;
     QMenu *menuFile;
@@ -37,24 +33,12 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->setEnabled(false);
+        MainWindow->setEnabled(true);
         MainWindow->resize(1000, 700);
+        MainWindow->setStyleSheet(QString::fromUtf8("background-color: white;"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        stackedWidget = new QStackedWidget(centralwidget);
-        stackedWidget->setObjectName("stackedWidget");
-        stackedWidget->setGeometry(QRect(-1, -1, 1000, 671));
-        QSizePolicy sizePolicy(QSizePolicy::Policy::Maximum, QSizePolicy::Policy::Maximum);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(stackedWidget->sizePolicy().hasHeightForWidth());
-        stackedWidget->setSizePolicy(sizePolicy);
-        page = new QWidget();
-        page->setObjectName("page");
-        stackedWidget->addWidget(page);
-        page_2 = new QWidget();
-        page_2->setObjectName("page_2");
-        stackedWidget->addWidget(page_2);
+        centralwidget->setEnabled(true);
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");

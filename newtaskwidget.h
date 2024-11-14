@@ -17,6 +17,9 @@ public:
 
 private:
     Ui::newTaskWidget *ui;
+
+private slots:
+    void onDoneButtonClicked();
 };
 
 #endif // NEWTASKWIDGET_H
