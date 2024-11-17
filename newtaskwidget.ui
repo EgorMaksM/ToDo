@@ -18,6 +18,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="layoutDirection">
+   <enum>Qt::LayoutDirection::LeftToRight</enum>
+  </property>
   <property name="styleSheet">
    <string notr="true">QPushButton {
 	padding: 12px;
@@ -158,13 +161,12 @@ QCalendarWidget QWidget#qt_calendar_navigationbar {
 }
 
 QCalendarWidget QSpinBox {
-    /*font-size: 16px;  Increase font size for better readability */
-    min-width: 70px; /* Ensure enough width for year numbers */
+    min-width: 70px;
 }
 
 QCalendarWidget QSpinBox::down-button {
-    width: 20px; /* Adjust the width of the dropdown button */
-    height: 20px; /* Ensure proper height */
+    width: 20px;
+    height: 20px;
 }
 
 QCalendarWidget QSpinBox::up-button {
@@ -173,18 +175,17 @@ QCalendarWidget QSpinBox::up-button {
 }
 
 QCalendarWidget QComboBox QAbstractItemView {
-    min-width: 100px; /* Make sure the popup showing the years is wide enough */
-    font-size: 14px; /* Make font size larger in the list of years */
+    min-width: 100px; 
+    font-size: 14px; 
 }
 
 QCalendarWidget QComboBox::drop-down {
-    width: 20px; /* Width of the dropdown button */
+    width: 20px; 
 }
 
-/* Optional: make the dropdown wider for year selection */
 QCalendarWidget QComboBox {
-    font-size: 16px; /* Adjust font size in year combobox */
-    min-width: 70px; /* Ensure sufficient width for the year display */
+    font-size: 16px; 
+    min-width: 70px; 
     padding: 2px; /* Add padding inside the box */
 }</string>
   </property>
@@ -251,17 +252,7 @@ QCalendarWidget QComboBox {
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">padding: 12px;
-font-size: 40;
-font-weight: bold;
-text-align: center;
-border: 2px solid #555;
-border-radius: 20px;
-background-color: #e6e6e6;
-box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.2);
-display: flex;
-justify-content: center;
-align-items: center;</string>
+    <string notr="true">background-color: #e6e6e6;</string>
    </property>
    <property name="text">
     <string>Done</string>

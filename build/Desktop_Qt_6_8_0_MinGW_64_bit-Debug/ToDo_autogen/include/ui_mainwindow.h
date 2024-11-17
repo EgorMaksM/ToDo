@@ -36,6 +36,7 @@ public:
         MainWindow->setEnabled(true);
         MainWindow->resize(1920, 1080);
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: white;"));
+        MainWindow->setTabShape(QTabWidget::TabShape::Rounded);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         centralwidget->setEnabled(true);
@@ -45,7 +46,7 @@ public:
         MainWindow->setStatusBar(statusbar);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 25, 1920, 25));
+        menubar->setGeometry(QRect(0, 0, 1920, 25));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName("menuFile");
         menuAbout = new QMenu(menubar);

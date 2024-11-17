@@ -44,6 +44,7 @@ public:
         QFont font;
         font.setBold(false);
         newTaskWidget->setFont(font);
+        newTaskWidget->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
         newTaskWidget->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	padding: 12px;\n"
 "    font-size: 40;\n"
@@ -186,13 +187,12 @@ public:
 "}\n"
 "\n"
 "QCalendarWidget QSpinBox {\n"
-"    /*font-size: 16px;  Increase font size for better readability */\n"
-"    min-width: 70px; /* Ensure enough width for year numbers */\n"
+"    min-width: 70px;\n"
 "}\n"
 "\n"
 "QCalendarWidget QSpinBox::down-button {\n"
-"    width: 20px; /* Adjust the width of the dropdown button */\n"
-"    height: 20px; /* Ensure proper height */\n"
+"    width: 20px;\n"
+"    height: 20px;\n"
 "}\n"
 "\n"
 "QCalendarWidget QSpinBox::up-button {\n"
@@ -201,19 +201,17 @@ public:
 "}\n"
 "\n"
 "QCalendarWidget QComboBox QAbstractItemView {\n"
-"    min-width: 100px; /* Make sure the popup showing the years is wide enough */\n"
-"    font-size: 14px; /* Make font size larger in the list of years */\n"
+"    min-width: 100px; \n"
+"    font-size: 14px; \n"
 "}\n"
 "\n"
 "QCalendarWidget QComboBox::drop-down {\n"
-"    width: 20px; /* Width of the dropdown button */\n"
+"    width: 20px; \n"
 "}\n"
 "\n"
-"/* Optional: make the dropdown wider for year selection */\n"
 "QCalendarWidget QComboBox {\n"
-"    font-size: 16px; /* Adjust font size in year combobox */\n"
-"    min-"
-                        "width: 70px; /* Ensure sufficient width for the year display */\n"
+"    font-size: 16px; \n"
+"    min-width: 70px; \n"
 "    padding: 2px; /* Add padding inside the box */\n"
 "}"));
         nameInputLabel = new QLabel(newTaskWidget);
@@ -243,17 +241,7 @@ public:
         font3.setPointSize(25);
         font3.setBold(true);
         doneButton->setFont(font3);
-        doneButton->setStyleSheet(QString::fromUtf8("padding: 12px;\n"
-"font-size: 40;\n"
-"font-weight: bold;\n"
-"text-align: center;\n"
-"border: 2px solid #555;\n"
-"border-radius: 20px;\n"
-"background-color: #e6e6e6;\n"
-"box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.2);\n"
-"display: flex;\n"
-"justify-content: center;\n"
-"align-items: center;"));
+        doneButton->setStyleSheet(QString::fromUtf8("background-color: #e6e6e6;"));
         descriptionInput = new QTextEdit(newTaskWidget);
         descriptionInput->setObjectName("descriptionInput");
         descriptionInput->setGeometry(QRect(0, 140, 361, 111));

@@ -8,9 +8,9 @@
 class ToDo
 {
 public:
-    ToDo();
+    ToDo(QString name, QString descr, QDateTime dateTime);
 
-private:
+public:
     QString Name;
     QString Description;
     QDateTime DateTime;

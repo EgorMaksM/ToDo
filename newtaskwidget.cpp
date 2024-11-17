@@ -12,6 +12,8 @@ newTaskWidget::newTaskWidget(QWidget *parent)
     connect(ui->doneButton, &QPushButton::clicked, this, &newTaskWidget::onDoneButtonClicked);
     connect(ui->timeEdit, &QTimeEdit::timeChanged, this, &newTaskWidget::onTimeChanged);
     connect(ui->dateEdit, &QCalendarWidget::selectionChanged, this, &newTaskWidget::onDateChanged);
+
+    onTimeChanged(QTime::currentTime());
 }
 
 newTaskWidget::~newTaskWidget()
@@ -46,5 +48,8 @@ void newTaskWidget::onDateChanged()
 
 void newTaskWidget::onDoneButtonClicked()
 {
-    ToDo newTask();
+    ToDo newTask(ui->nameInput->toPlainText(), ui->descriptionInput->toPlainText(), selectedDateTime);
+    qDebug() << "New Name: " << newTask.Name;
+    qDebug() << "New Description: " << newTask.Description;
+    qDebug() << "New DateTime: " << newTask.DateTime;
 }
