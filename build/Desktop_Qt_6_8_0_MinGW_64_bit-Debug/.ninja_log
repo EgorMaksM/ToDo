@@ -37,3 +37,13 @@
 556	2772	7535838119394240	CMakeFiles/ToDo.dir/mainwindow.cpp.obj	b713ce062c7ec8e4
 574	2835	7535838119576457	CMakeFiles/ToDo.dir/newtaskwidget.cpp.obj	5a81cd8a0b06ff6a
 2835	3317	7535838142193982	ToDo.exe	6124b2756e700ce7
+8	299	7535858696274254	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	3ddc5c9d3a4f0afc
+307	1183	7535858707147105	ToDo_autogen/timestamp	2c3f7267989e7bf9
+307	1183	7535858707147105	ToDo_autogen/mocs_compilation.cpp	2c3f7267989e7bf9
+307	1183	7535858707147105	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/timestamp	2c3f7267989e7bf9
+307	1183	7535858707147105	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/mocs_compilation.cpp	2c3f7267989e7bf9
+1184	4758	7535858708032336	CMakeFiles/ToDo.dir/ToDo_autogen/mocs_compilation.cpp.obj	c73ba712f38300da
+1213	4812	7535858708322358	CMakeFiles/ToDo.dir/main.cpp.obj	51f9cb26441c8f2a
+1235	5078	7535858708542456	CMakeFiles/ToDo.dir/mainwindow.cpp.obj	b713ce062c7ec8e4
+1275	5148	7535858708942841	CMakeFiles/ToDo.dir/newtaskwidget.cpp.obj	5a81cd8a0b06ff6a
+5148	5647	7535858747670900	ToDo.exe	6124b2756e700ce7

@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QCalendarWidget>
+#include <QDateTime>
 #include "todo.h"
 
 namespace Ui {
@@ -17,10 +18,14 @@ public:
     explicit newTaskWidget(QWidget *parent = nullptr);
     ~newTaskWidget();
 
+    QDateTime selectedDateTime;
+
 private:
     Ui::newTaskWidget *ui;
 
 private slots:
+    void onTimeChanged(const QTime &newTime);
+    void onDateChanged();
     void onDoneButtonClicked();
 };
 

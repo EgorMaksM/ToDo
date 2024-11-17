@@ -1,5 +1,8 @@
 C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_newtaskwidget.cpp: C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/moc_predefs.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QDateTime \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QtGlobal \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
@@ -361,4 +364,5 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h
