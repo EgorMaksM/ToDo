@@ -10,11 +10,6 @@ newTaskWidget::newTaskWidget(QWidget *parent)
     this->show();
 
     connect(ui->doneButton, &QPushButton::clicked, this, &newTaskWidget::onDoneButtonClicked);
-    ui->nameInput->setEnabled(true);
-    ui->nameInput->setReadOnly(false);
-    ui->nameInput->setFocus();
-    ui->nameInput->setStyleSheet("");
-    ui->nameInput->setText("Hello World!");
 }
 
 newTaskWidget::~newTaskWidget()

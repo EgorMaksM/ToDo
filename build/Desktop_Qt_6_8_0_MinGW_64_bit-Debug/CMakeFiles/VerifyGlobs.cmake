@@ -48,6 +48,7 @@ set(OLD_GLOB
   "C:/Users/yehmak001/Documents/GitHub/ToDo/main.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.cpp"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/todo.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -71,6 +72,7 @@ set(OLD_GLOB
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/moc_predefs.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

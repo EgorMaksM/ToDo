@@ -34,7 +34,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->setEnabled(true);
-        MainWindow->resize(1000, 700);
+        MainWindow->resize(1920, 1080);
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: white;"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
@@ -45,7 +45,7 @@ public:
         MainWindow->setStatusBar(statusbar);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1000, 25));
+        menubar->setGeometry(QRect(0, 25, 1920, 25));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName("menuFile");
         menuAbout = new QMenu(menubar);

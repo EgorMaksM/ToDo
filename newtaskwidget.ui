@@ -6,9 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>999</width>
-    <height>669</height>
+    <width>1920</width>
+    <height>1045</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <bold>false</bold>
+   </font>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -27,6 +32,160 @@
 QWidget {
 	background-color: white;
 	color: black;
+}
+
+QTextEdit {
+    height:fit-content;
+    font-size: 18px;
+	selection-background-color: #b3b3b3;
+    selection-color: black;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+QTextEdit QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+}
+
+QTextEdit QScrollBar::handle:vertical {
+    background: #a3a3a3;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+QTextEdit QScrollBar::handle:vertical:hover {
+    background: #7d7d7d;
+}
+
+QTextEdit QScrollBar::add-line:vertical,
+QTextEdit QScrollBar::sub-line:vertical {
+    background: none;
+    height: 0px;
+}
+
+QPlainTextEdit {
+	height:fit-content;
+    font-size: 18px;
+	selection-background-color: #b3b3b3;
+    selection-color: black;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+QTimeEdit {
+	selection-background-color: grey;
+    selection-color: black;
+    border: 1px solid #b3b3b3;
+    padding: 2px;
+}
+
+QTimeEdit:focus {
+	border: 1px solid #b3b3b3;
+	background-color: #f0f0f0;
+}
+
+QTimeEdit::up-button, QTimeEdit::down-button {
+    width: 0px;
+    height: 0px;
+    border: none;
+    background: none;
+}
+
+QCalendarWidget {
+    border: 20px solid #409186;
+    border-radius: 5px;
+    padding: 5px;
+	selection-background-color: #b3b3b3;
+    selection-color: black;
+}
+
+QCalendarWidget QMenu {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+QCalendarWidget QAbstractItemView:focus {
+    outline: none;
+}
+
+QCalendarWidget QAbstractItemView::item:selected {
+    background-color: #7ba695;
+    color: #13241d;
+    border: 2px solid #2d4a3e;
+	border-radius: 5px;
+}
+
+QCalendarWidget QAbstractItemView::item:hover {
+    background-color: #93baa7;
+    color: #13241d;
+    border: 2px solid #466e5d;
+	border-radius: 5px;
+	font-weight: 50px;
+}
+
+QCalendarWidget QAbstractItemView::item:selected:hover {
+    background-color: #7ba695;
+    color: #13241d;
+    border: 2px solid #2d4a3e;
+	border-radius: 5px;
+}
+
+QCalendarWidget QToolButton {
+	background-color: #409186;
+    color: black;
+    margin: 1px;
+}
+
+QCalendarWidget QToolButton::menu-indicator {
+    image: none;
+}
+
+QCalendarWidget QAbstractItemView {
+	background-color: #c3dbcf;
+	selection-background-color: #7ba695;
+    selection-color: #1d332b;
+}
+
+QCalendarWidget QAbstractItemView::item {
+	background-color: #c1e0d1;
+	color: black;
+	border: none;
+}
+
+QCalendarWidget QWidget#qt_calendar_navigationbar {
+    background-color: #409186;
+}
+
+QCalendarWidget QSpinBox {
+    /*font-size: 16px;  Increase font size for better readability */
+    min-width: 70px; /* Ensure enough width for year numbers */
+}
+
+QCalendarWidget QSpinBox::down-button {
+    width: 20px; /* Adjust the width of the dropdown button */
+    height: 20px; /* Ensure proper height */
+}
+
+QCalendarWidget QSpinBox::up-button {
+    width: 20px;
+    height: 20px;
+}
+
+QCalendarWidget QComboBox QAbstractItemView {
+    min-width: 100px; /* Make sure the popup showing the years is wide enough */
+    font-size: 14px; /* Make font size larger in the list of years */
+}
+
+QCalendarWidget QComboBox::drop-down {
+    width: 20px; /* Width of the dropdown button */
+}
+
+/* Optional: make the dropdown wider for year selection */
+QCalendarWidget QComboBox {
+    font-size: 16px; /* Adjust font size in year combobox */
+    min-width: 70px; /* Ensure sufficient width for the year display */
+    padding: 2px; /* Add padding inside the box */
 }</string>
   </property>
   <widget class="QLabel" name="nameInputLabel">
@@ -45,25 +204,6 @@ QWidget {
    </property>
    <property name="text">
     <string>Name your ToDo:</string>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="nameInput">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>80</y>
-     <width>361</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::Shape::Panel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Shadow::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>1</number>
    </property>
   </widget>
   <widget class="QLabel" name="pageName">
@@ -99,7 +239,7 @@ QWidget {
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>310</y>
+     <y>700</y>
      <width>131</width>
      <height>81</height>
     </rect>
@@ -136,6 +276,12 @@ align-items: center;</string>
      <height>111</height>
     </rect>
    </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+   </property>
   </widget>
   <widget class="QLabel" name="descriptionInputLabel">
    <property name="geometry">
@@ -153,6 +299,143 @@ align-items: center;</string>
    </property>
    <property name="text">
     <string>Describe new ToDo:</string>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="timeEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>300</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+   </property>
+   <property name="correctionMode">
+    <enum>QAbstractSpinBox::CorrectionMode::CorrectToPreviousValue</enum>
+   </property>
+   <property name="displayFormat">
+    <string>h:mm</string>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::TimeSpec::LocalTime</enum>
+   </property>
+  </widget>
+  <widget class="QCalendarWidget" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>410</y>
+     <width>344</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <kerning>true</kerning>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="minimumDate">
+    <date>
+     <year>1752</year>
+     <month>9</month>
+     <day>29</day>
+    </date>
+   </property>
+   <property name="firstDayOfWeek">
+    <enum>Qt::DayOfWeek::Monday</enum>
+   </property>
+   <property name="gridVisible">
+    <bool>true</bool>
+   </property>
+   <property name="verticalHeaderFormat">
+    <enum>QCalendarWidget::VerticalHeaderFormat::NoVerticalHeader</enum>
+   </property>
+   <property name="navigationBarVisible">
+    <bool>true</bool>
+   </property>
+   <property name="dateEditEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>260</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Set Time:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>370</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Set Date:</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="nameInput">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>361</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="lineWrapMode">
+    <enum>QPlainTextEdit::LineWrapMode::NoWrap</enum>
    </property>
   </widget>
  </widget>

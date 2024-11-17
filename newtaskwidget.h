@@ -2,6 +2,8 @@
 #define NEWTASKWIDGET_H
 
 #include <QWidget>
+#include <QCalendarWidget>
+#include "todo.h"
 
 namespace Ui {
 class newTaskWidget;

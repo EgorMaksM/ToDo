@@ -287,6 +287,12 @@
 			"MU",
 			"EWIEGA46WW/moc_newtaskwidget.cpp",
 			null
+		],
+		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h",
+			"MU",
+			"EWIEGA46WW/moc_todo.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -366,7 +372,8 @@
 			"C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.cpp",
 			"MU",
 			null
-		]
+		],
+		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/todo.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
