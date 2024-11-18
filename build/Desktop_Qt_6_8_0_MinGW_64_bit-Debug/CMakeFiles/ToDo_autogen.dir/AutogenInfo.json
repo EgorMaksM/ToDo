@@ -295,6 +295,12 @@
 			null
 		],
 		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/taskdisplay.h",
+			"MU",
+			"EWIEGA46WW/moc_taskdisplay.cpp",
+			null
+		],
+		[
 			"C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h",
 			"MU",
 			"EWIEGA46WW/moc_todo.cpp",
@@ -377,6 +383,11 @@
 		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.cpp", "MU", null ],
 		[
 			"C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/taskdisplay.cpp",
 			"MU",
 			null
 		],

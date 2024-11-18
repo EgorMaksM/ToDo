@@ -3,7 +3,16 @@
 
 #include <QMainWindow>
 #include <QStackedWidget>
+#include <QVBoxLayout>
+#include <QTextEdit>
+#include <QPlainTextEdit>
+#include <QPushButton>
+#include <QCalendarWidget>
+#include <QTimeEdit>
+
+#include "todo.h"
 #include "newtaskwidget.h"
+#include "taskdisplay.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,6 +30,7 @@ public:
 
     QStackedWidget* stackedWidget;
     newTaskWidget* newTask;
+    TaskDisplay *todo1;
 
 private:
     Ui::MainWindow *ui;

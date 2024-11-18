@@ -2,25 +2,21 @@
 
 #include "./ui_mainwindow.h"
 
-#include <QTextEdit>
-#include <QPlainTextEdit>
-#include <QPushButton>
-#include <QCalendarWidget>
-#include <QTimeEdit>
-
-#include "todo.h"
-
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
+    QVBoxLayout *layout = new QVBoxLayout(ui->centralwidget);
+
     stackedWidget = new QStackedWidget(this);
     newTask = new newTaskWidget(this);
+    todo1 = new TaskDisplay(this);
 
-    stackedWidget->setGeometry(0, 35, 1920, 1045);
+    stackedWidget->setGeometry(0, 35, 1300, 850);
     stackedWidget->addWidget(newTask);
+    layout->addWidget(stackedWidget);
 
     QPlainTextEdit* nameInput = newTask->findChild<QPlainTextEdit*>("nameInput");
     QTextEdit* descriptionInput = newTask->findChild<QTextEdit*>("descriptionInput");
@@ -30,6 +26,14 @@ MainWindow::MainWindow(QWidget *parent)
 
     dateInput->setGridVisible(true);
     dateInput->setSelectionMode(QCalendarWidget::SingleSelection);
+
+    todo1->setTitle("Name", Qt::blue);
+    todo1->setDescription("LALALALALlalalala papapapapapa", Qt::gray);
+    todo1->setDueDate(QDateTime::currentDateTime(), Qt::green);
+    todo1->setFlagColor(Qt::blue);
+
+    stackedWidget->addWidget(todo1);
+    stackedWidget->setCurrentWidget(todo1);
 }
 
 MainWindow::~MainWindow()

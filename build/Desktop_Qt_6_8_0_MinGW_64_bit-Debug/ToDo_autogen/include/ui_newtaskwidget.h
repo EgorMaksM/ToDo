@@ -40,7 +40,7 @@ public:
     {
         if (newTaskWidget->objectName().isEmpty())
             newTaskWidget->setObjectName("newTaskWidget");
-        newTaskWidget->resize(1920, 1045);
+        newTaskWidget->resize(430, 835);
         QFont font;
         font.setBold(false);
         newTaskWidget->setFont(font);
@@ -219,6 +219,7 @@ public:
         nameInputLabel->setGeometry(QRect(0, 60, 151, 20));
         QFont font1;
         font1.setPointSize(11);
+        font1.setBold(false);
         nameInputLabel->setFont(font1);
         pageName = new QLabel(newTaskWidget);
         pageName->setObjectName("pageName");

@@ -44,11 +44,13 @@ set(OLD_GLOB
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_newtaskwidget.cpp"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_taskdisplay.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/mocs_compilation.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/filestream.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/main.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.cpp"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/taskdisplay.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/todo.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -70,10 +72,12 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/yehmak001/Documents/
 set(OLD_GLOB
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/include/ui_mainwindow.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/include/ui_newtaskwidget.h"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/include/ui_taskdisplay.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/moc_predefs.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/filestream.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/taskdisplay.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -176,6 +180,7 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/yehmak001/Documents/
 set(OLD_GLOB
   "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.ui"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.ui"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/taskdisplay.ui"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

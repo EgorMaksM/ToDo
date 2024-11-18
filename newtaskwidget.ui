@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>1045</height>
+    <width>430</width>
+    <height>835</height>
    </rect>
   </property>
   <property name="font">
@@ -201,6 +201,7 @@ QCalendarWidget QComboBox {
    <property name="font">
     <font>
      <pointsize>11</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -286,6 +287,7 @@ QCalendarWidget QComboBox {
    <property name="font">
     <font>
      <pointsize>11</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -386,6 +388,7 @@ QCalendarWidget QComboBox {
    <property name="font">
     <font>
      <pointsize>11</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -404,6 +407,7 @@ QCalendarWidget QComboBox {
    <property name="font">
     <font>
      <pointsize>11</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
