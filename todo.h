@@ -8,7 +8,7 @@
 class ToDo
 {
 public:
-    ToDo(QString name, QString descr, QDateTime dateTime);
+    ToDo(const QString name = QString(""), const QString descr = QString(""), const QDateTime dateTime = QDateTime());
 
 public:
     QString Name;

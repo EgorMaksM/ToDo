@@ -1,8 +1,6 @@
 #include "todo.h"
 
-ToDo::ToDo(QString name, QString descr, QDateTime dateTime)
+ToDo::ToDo(const QString name, const QString descr, const QDateTime dateTime) : Name(name), Description(descr), DateTime(dateTime)
 {
-    Name = name;
-    Description = descr;
-    DateTime = dateTime;
+
 }

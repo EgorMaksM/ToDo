@@ -4,6 +4,9 @@
 #include <QWidget>
 #include <QCalendarWidget>
 #include <QDateTime>
+#include <QFile>
+#include <QDataStream>
+#include <QCoreApplication>
 #include "todo.h"
 
 namespace Ui {

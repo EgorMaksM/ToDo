@@ -29,6 +29,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         newtaskwidget.h newtaskwidget.cpp newtaskwidget.ui
         todo.h todo.cpp
+        filestream.h filestream.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
