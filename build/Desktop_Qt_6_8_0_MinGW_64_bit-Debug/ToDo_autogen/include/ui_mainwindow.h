@@ -35,7 +35,18 @@ public:
             MainWindow->setObjectName("MainWindow");
         MainWindow->setEnabled(true);
         MainWindow->resize(1920, 1080);
-        MainWindow->setStyleSheet(QString::fromUtf8("background-color: white;"));
+        MainWindow->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
+        MainWindow->setStyleSheet(QString::fromUtf8("#centralwidget {\n"
+"	background-color: grey;\n"
+"}\n"
+"\n"
+"TaskWidget {\n"
+"	border-radius: 10px;\n"
+"}\n"
+"\n"
+"QFrame {\n"
+"	border-radius: 20px;\n"
+"}"));
         MainWindow->setTabShape(QTabWidget::TabShape::Rounded);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");

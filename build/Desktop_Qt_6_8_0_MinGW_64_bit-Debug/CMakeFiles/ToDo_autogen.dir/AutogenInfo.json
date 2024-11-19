@@ -295,9 +295,9 @@
 			null
 		],
 		[
-			"C:/Users/yehmak001/Documents/GitHub/ToDo/taskdisplay.h",
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.h",
 			"MU",
-			"EWIEGA46WW/moc_taskdisplay.cpp",
+			"EWIEGA46WW/moc_taskwidget.cpp",
 			null
 		],
 		[
@@ -386,11 +386,7 @@
 			"MU",
 			null
 		],
-		[
-			"C:/Users/yehmak001/Documents/GitHub/ToDo/taskdisplay.cpp",
-			"MU",
-			null
-		],
+		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.cpp", "MU", null ],
 		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/todo.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

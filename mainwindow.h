@@ -12,7 +12,7 @@
 
 #include "todo.h"
 #include "newtaskwidget.h"
-#include "taskdisplay.h"
+#include "taskwidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -28,9 +28,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    QStackedWidget* stackedWidget;
-    newTaskWidget* newTask;
-    TaskDisplay *todo1;
+    //QStackedWidget* stackedWidget;
+    //newTaskWidget* newTask;
+    TaskWidget *todo1;
 
 private:
     Ui::MainWindow *ui;

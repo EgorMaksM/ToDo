@@ -7,33 +7,35 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //stackedWidget = new QStackedWidget(this);
+    //newTask = new newTaskWidget(this);
+    todo1 = new TaskWidget(this);
+    todo1->setGeometry(500, 500, 430, 130);
 
-    QVBoxLayout *layout = new QVBoxLayout(ui->centralwidget);
-
-    stackedWidget = new QStackedWidget(this);
-    newTask = new newTaskWidget(this);
-    todo1 = new TaskDisplay(this);
-
-    stackedWidget->setGeometry(0, 35, 1300, 850);
+    /*stackedWidget->setGeometry(0, 0, 1920, 1080);
+    stackedWidget->setStyleSheet(QString("background-color:white;"));
     stackedWidget->addWidget(newTask);
-    layout->addWidget(stackedWidget);
 
-    QPlainTextEdit* nameInput = newTask->findChild<QPlainTextEdit*>("nameInput");
-    QTextEdit* descriptionInput = newTask->findChild<QTextEdit*>("descriptionInput");
-    QTimeEdit* timeInput = newTask->findChild<QTimeEdit*>("timeEdit");
     QCalendarWidget* dateInput = newTask->findChild<QCalendarWidget*>("dateEdit");
-    QPushButton* doneButton = newTask->findChild<QPushButton*>("doneButton");
 
     dateInput->setGridVisible(true);
-    dateInput->setSelectionMode(QCalendarWidget::SingleSelection);
+    dateInput->setSelectionMode(QCalendarWidget::SingleSelection);*/
 
     todo1->setTitle("Name", Qt::blue);
     todo1->setDescription("LALALALALlalalala papapapapapa", Qt::gray);
     todo1->setDueDate(QDateTime::currentDateTime(), Qt::green);
     todo1->setFlagColor(Qt::blue);
 
-    stackedWidget->addWidget(todo1);
-    stackedWidget->setCurrentWidget(todo1);
+    //todo1->setStyleSheet(QString("background-color:white;"));
+    todo1->setFlagColor(Qt::blue);
+    todo1->setGeometry(500, 500, 430, 130);
+
+    //stackedWidget->addWidget(todo1);
+
+    //stackedWidget->setCurrentWidget(todo1);
+    qDebug() << "Todo1 geometry:" << todo1->geometry();
+    qDebug() << "Todo1 visible:" << todo1->isVisible();
+    qDebug() << "Todo1's parent:" << todo1->parent();
 }
 
 MainWindow::~MainWindow()

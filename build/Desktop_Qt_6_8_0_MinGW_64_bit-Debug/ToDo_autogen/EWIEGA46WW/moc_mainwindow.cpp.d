@@ -16,7 +16,6 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q23utility.h \
-  C:/Qt/6.8.0/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qarraydata.h \
@@ -149,6 +148,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QPainter \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/QPainterPath \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QTransform \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qabstracttextdocumentlayout.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qaction.h \
@@ -172,6 +172,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpainter.h \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/qpainterpath.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpalette.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpen.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpixelformat.h \
@@ -199,36 +200,32 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QCalendarWidget \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QFrame \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPlainTextEdit \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QStackedWidget \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QStyleOption \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QTextEdit \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QTimeEdit \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractslider.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qcalendarwidget.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgridlayout.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qplaintextedit.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qpushbutton.h \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qslider.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstackedwidget.h \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstyle.h \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstyleoption.h \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabbar.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtextedit.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
@@ -472,5 +469,5 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h \
-  C:/Users/yehmak001/Documents/GitHub/ToDo/taskdisplay.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h
