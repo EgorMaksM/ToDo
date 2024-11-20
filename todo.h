@@ -14,6 +14,8 @@ public:
     QString Name;
     QString Description;
     QDateTime DateTime;
+
+    bool operator==(ToDo const& other) const;
 };
 
 #endif

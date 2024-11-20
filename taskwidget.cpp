@@ -1,63 +1,116 @@
 #include "taskwidget.h"
 #include "ui_taskwidget.h"
 
-TaskWidget::TaskWidget(QWidget *parent)
+TaskWidget::TaskWidget(QWidget *parent,
+                       const QString& title, const QColor &title_color,
+                       const QString &description, const QColor &descr_color,
+                       const QDateTime &dueDate, const QColor &dueDate_color,
+                       const QColor &flagColor)
     : QFrame(parent)
     , ui(new Ui::TaskWidget)
+    , flagColor(flagColor)
 {
     ui->setupUi(this);
 
+    /* Main Components&Values Initialization */
+    setTitle(title, title_color);
+    setDescription(description, descr_color);
+    setDueDate(dueDate, dueDate_color);
+
+    /* Graphics Setup */
     setAttribute(Qt::WA_TranslucentBackground);
     setStyleSheet("background-color: transparent;");
+    ui->flag->setGeometry(0, 0, cornerRadii, 130);
 
-    ui->flag->setGeometry(0, 0, 20, 130);
-
+    /* Stylization */
     ui->titleLabel->setFont(bahnschriftFont);
     ui->descriptionLabel->setFont(bahnschriftFont);
     ui->dueDateLabel->setFont(bahnschriftFont);
 
-    ui->titleLabel->setStyleSheet("font-weight: bold; font-size: 16px;");
-    ui->descriptionLabel->setStyleSheet("font-size: 14px; color: grey;");
-    ui->dueDateLabel->setStyleSheet("font-size: 14px; color: green;");
-
+    /* Drop-Shadow */
     QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect(this);
     shadow->setBlurRadius(15);
     shadow->setOffset(5, 5);
     shadow->setColor(QColor(0, 0, 0, 50));
     setGraphicsEffect(shadow);
-    update();
 }
+
+TaskWidget::TaskWidget(QWidget *parent,
+           const QString& title, const QString &description,
+           const QDateTime &dueDate,
+           const int paletteIndex)
+    : QFrame(parent)
+    , ui(new Ui::TaskWidget)
+{
+    ui->setupUi(this);
+
+    /* Main Components&Values Initialization */
+    setTitle(title);
+    setDescription(description);
+    setDueDate(dueDate);
+    setColorPalette(paletteIndex);
+
+    /* Graphics Setup */
+    setAttribute(Qt::WA_TranslucentBackground);
+    setStyleSheet("background-color: transparent;");
+    ui->flag->setGeometry(0, 0, cornerRadii, 130);
+
+    /* Stylization */
+    ui->titleLabel->setFont(bahnschriftFont);
+    ui->descriptionLabel->setFont(bahnschriftFont);
+    ui->dueDateLabel->setFont(bahnschriftFont);
+
+    /* Drop-Shadow */
+    QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect(this);
+    shadow->setBlurRadius(15);
+    shadow->setOffset(5, 5);
+    shadow->setColor(QColor(0, 0, 0, 50));
+    setGraphicsEffect(shadow);
+};
 
 TaskWidget::~TaskWidget()
 {
     delete ui;
 }
 
+/* Change how "title" looks */
 void TaskWidget::setTitle(const QString &title, const QColor &color)
 {
     ui->titleLabel->setText(title);
     ui->titleLabel->setStyleSheet(QString("font-weight: bold; color: %1; font-size: 16px;").arg(color.name()));
 }
-
+/* Change how "description" looks */
 void TaskWidget::setDescription(const QString &description, const QColor &color)
 {
     ui->descriptionLabel->setText(description);
     ui->descriptionLabel->setStyleSheet(QString("color: %1; font-size: 14px;").arg(color.name()));
 }
 
+/* Change how "dueDate" looks */
 void TaskWidget::setDueDate(const QDateTime &dueDate, const QColor &color)
 {
     ui->dueDateLabel->setText(QString("◦ %1").arg(dueDate.toString("dd/MM/yyyy HH:mm")));
     ui->dueDateLabel->setStyleSheet(QString("font-size: 14px; color: %1;").arg(color.name()));
 }
 
+/* Change how "flag" looks */
 void TaskWidget::setFlagColor(const QColor &color)
 {
     flagColor = color;
     update();
-    //ui->flag->setStyleSheet(QString("background-color: %1;").arg(color.name()));
 }
 
+/* Set one of the premade Color Palettes */
+void TaskWidget::setColorPalette(const int paletteIndex)
+{
+    QList<QColor>& palette = premadePalettes[paletteIndex];
+    ui->titleLabel->setStyleSheet(QString("font-weight: bold; color: %1; font-size: 16px;").arg(palette[0].name()));
+    ui->descriptionLabel->setStyleSheet(QString("font-size: 14px; color: %1;").arg(palette[1].name()));
+    ui->dueDateLabel->setStyleSheet(QString("font-size: 14px; color: %1;").arg(palette[2].name()));
+    setFlagColor(palette[3]);
+}
+
+/* Rounded corners logic&execution */
 void TaskWidget::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);
@@ -69,8 +122,7 @@ void TaskWidget::paintEvent(QPaintEvent *event)
     painter.setPen(Qt::NoPen);
     painter.drawRoundedRect(widgetRect, cornerRadii, cornerRadii);
 
-    QRectF flagRect = ui->flag->geometry();
-    qDebug() << flagRect;
+    QRectF flagRect = QRectF(0, 0, cornerRadii, height());//ui->flag->geometry();
     int flagWidth = flagRect.width();
     int flagHeight = flagRect.height();
 

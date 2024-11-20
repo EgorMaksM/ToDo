@@ -31,8 +31,12 @@ public:
     //QStackedWidget* stackedWidget;
     //newTaskWidget* newTask;
     TaskWidget *todo1;
+    QPushButton *green;
+    QPushButton *yellow;
+    QPushButton *blue;
 
 private:
     Ui::MainWindow *ui;
+
 };
 #endif // MAINWINDOW_H

@@ -21,6 +21,7 @@ newTaskWidget::~newTaskWidget()
     delete ui;
 }
 
+/* Check new time's correctness */
 void newTaskWidget::onTimeChanged(const QTime& newTime)
 {
     QDateTime currDateTime = QDateTime::currentDateTime();
@@ -33,6 +34,7 @@ void newTaskWidget::onTimeChanged(const QTime& newTime)
     }
 }
 
+/* Check new date's correctness */
 void newTaskWidget::onDateChanged()
 {
     QDate newDate = ui->dateEdit->selectedDate();
@@ -46,6 +48,7 @@ void newTaskWidget::onDateChanged()
     }
 }
 
+/* Executed when "Done" button is clicked */
 void newTaskWidget::onDoneButtonClicked()
 {
     ToDo newTask(ui->nameInput->toPlainText(), ui->descriptionInput->toPlainText(), selectedDateTime);

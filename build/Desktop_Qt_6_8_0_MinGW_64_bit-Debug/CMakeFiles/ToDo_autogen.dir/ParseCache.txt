@@ -125,6 +125,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.h
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/qversiontagging.h
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h
+ mdp:C:/Qt/6.8.0/mingw_64/include/QtGui/QColor
  mdp:C:/Qt/6.8.0/mingw_64/include/QtGui/QPainter
  mdp:C:/Qt/6.8.0/mingw_64/include/QtGui/QPainterPath
  mdp:C:/Qt/6.8.0/mingw_64/include/QtGui/qaction.h
@@ -935,6 +936,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.h
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/qversiontagging.h
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h
+ mdp:C:/Qt/6.8.0/mingw_64/include/QtGui/QColor
  mdp:C:/Qt/6.8.0/mingw_64/include/QtGui/QPainter
  mdp:C:/Qt/6.8.0/mingw_64/include/QtGui/QPainterPath
  mdp:C:/Qt/6.8.0/mingw_64/include/QtGui/QTransform

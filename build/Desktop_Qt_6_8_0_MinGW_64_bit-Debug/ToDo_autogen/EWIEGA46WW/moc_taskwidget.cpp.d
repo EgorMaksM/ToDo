@@ -124,6 +124,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/QColor \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QPainter \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QPainterPath \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qaction.h \
