@@ -1,5 +1,6 @@
 #include "taskwidget.h"
 #include "ui_taskwidget.h"
+#include <qevent.h>
 
 TaskWidget::TaskWidget(QWidget *parent,
                        const QString& title, const QColor &title_color,
@@ -20,7 +21,7 @@ TaskWidget::TaskWidget(QWidget *parent,
     /* Graphics Setup */
     setAttribute(Qt::WA_TranslucentBackground);
     setStyleSheet("background-color: transparent;");
-    ui->flag->setGeometry(0, 0, cornerRadii, 130);
+    ui->flag->setGeometry(0, 0, cornerRadii, height());
 
     /* Stylization */
     ui->titleLabel->setFont(bahnschriftFont);
@@ -53,7 +54,7 @@ TaskWidget::TaskWidget(QWidget *parent,
     /* Graphics Setup */
     setAttribute(Qt::WA_TranslucentBackground);
     setStyleSheet("background-color: transparent;");
-    ui->flag->setGeometry(0, 0, cornerRadii, 130);
+    ui->flag->setGeometry(0, 0, cornerRadii, height());
 
     /* Stylization */
     ui->titleLabel->setFont(bahnschriftFont);
@@ -77,20 +78,20 @@ TaskWidget::~TaskWidget()
 void TaskWidget::setTitle(const QString &title, const QColor &color)
 {
     ui->titleLabel->setText(title);
-    ui->titleLabel->setStyleSheet(QString("font-weight: bold; color: %1; font-size: 16px;").arg(color.name()));
+    ui->titleLabel->setStyleSheet(QString("font-weight: bold; color: %1; font-size: 17pt;").arg(color.name()));
 }
 /* Change how "description" looks */
 void TaskWidget::setDescription(const QString &description, const QColor &color)
 {
-    ui->descriptionLabel->setText(description);
-    ui->descriptionLabel->setStyleSheet(QString("color: %1; font-size: 14px;").arg(color.name()));
+    ui->descriptionLabel->setText(QString("ⓘ %1").arg(description));
+    ui->descriptionLabel->setStyleSheet(QString("font-weight: 600; color: %1; font-size: 13pt;").arg(color.name()));
 }
 
 /* Change how "dueDate" looks */
 void TaskWidget::setDueDate(const QDateTime &dueDate, const QColor &color)
 {
     ui->dueDateLabel->setText(QString("◦ %1").arg(dueDate.toString("dd/MM/yyyy HH:mm")));
-    ui->dueDateLabel->setStyleSheet(QString("font-size: 14px; color: %1;").arg(color.name()));
+    ui->dueDateLabel->setStyleSheet(QString("font-weight: 600; font-size: 18pt; color: %1;").arg(color.name()));
 }
 
 /* Change how "flag" looks */
@@ -104,9 +105,9 @@ void TaskWidget::setFlagColor(const QColor &color)
 void TaskWidget::setColorPalette(const int paletteIndex)
 {
     QList<QColor>& palette = premadePalettes[paletteIndex];
-    ui->titleLabel->setStyleSheet(QString("font-weight: bold; color: %1; font-size: 16px;").arg(palette[0].name()));
-    ui->descriptionLabel->setStyleSheet(QString("font-size: 14px; color: %1;").arg(palette[1].name()));
-    ui->dueDateLabel->setStyleSheet(QString("font-size: 14px; color: %1;").arg(palette[2].name()));
+    ui->titleLabel->setStyleSheet(QString("font-weight: bold; color: %1; font-size: 20pt;").arg(palette[0].name()));
+    ui->descriptionLabel->setStyleSheet(QString("font-weight: 600; color: %1; font-size: 13pt;").arg(palette[1].name()));
+    ui->dueDateLabel->setStyleSheet(QString("font-weight: 600; font-size: 18pt; color: %1;").arg(palette[2].name()));
     setFlagColor(palette[3]);
 }
 
@@ -155,4 +156,31 @@ void TaskWidget::paintEvent(QPaintEvent *event)
     ui->flag->setAttribute(Qt::WA_OpaquePaintEvent, false);
 
     QFrame::paintEvent(event);
+}
+
+void TaskWidget::resizeEvent(QResizeEvent *event)
+{
+    QSize newSize = event->size();
+    QSize oldSize = event->oldSize();
+
+    int widthChange = newSize.width() - oldSize.width();
+
+    if (widthChange != 0)
+    {
+        newSize.setHeight(newSize.width() * relationsMatrix[0]);
+        qDebug() << newSize.width() << relationsMatrix[0];
+        cornerRadii = relationsMatrix[1] * newSize.width();
+        titleFont.setPointSize(newSize.width() * relationsMatrix[2]);
+        qDebug() << newSize.width() * relationsMatrix[2];
+        descrFont.setPointSize(relationsMatrix[3] * newSize.width());
+        dateFont.setPointSize(relationsMatrix[4] * newSize.width());
+    }
+
+    resize(newSize);
+    ui->titleLabel->setFont(titleFont);
+    ui->descriptionLabel->setFont(descrFont);
+    ui->dueDateLabel->setFont(dateFont);
+    update();
+
+    QWidget::resizeEvent(event);
 }

@@ -35,32 +35,40 @@ public:
     {
         if (TaskWidget->objectName().isEmpty())
             TaskWidget->setObjectName("TaskWidget");
-        TaskWidget->resize(430, 130);
-        TaskWidget->setMaximumSize(QSize(430, 130));
+        TaskWidget->resize(430, 145);
+        TaskWidget->setMaximumSize(QSize(16777215, 16777215));
         TaskWidget->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
         TaskWidget->setStyleSheet(QString::fromUtf8(""));
         horizontalLayoutWidget = new QWidget(TaskWidget);
         horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
-        horizontalLayoutWidget->setGeometry(QRect(-1, -5, 431, 141));
+        horizontalLayoutWidget->setGeometry(QRect(-1, -5, 431, 151));
         mainLayout = new QHBoxLayout(horizontalLayoutWidget);
         mainLayout->setObjectName("mainLayout");
         mainLayout->setContentsMargins(0, 0, 0, 0);
         flag = new QFrame(horizontalLayoutWidget);
         flag->setObjectName("flag");
-        flag->setMaximumSize(QSize(20, 130));
+        flag->setMaximumSize(QSize(20, 145));
         flag->setFrameShape(QFrame::Shape::StyledPanel);
         flag->setFrameShadow(QFrame::Shadow::Raised);
 
         mainLayout->addWidget(flag);
 
         contentLayout = new QVBoxLayout();
+        contentLayout->setSpacing(0);
         contentLayout->setObjectName("contentLayout");
-        contentLayout->setContentsMargins(15, 15, 15, 15);
+        contentLayout->setContentsMargins(7, 0, 0, 0);
         headerLayout = new QHBoxLayout();
+        headerLayout->setSpacing(0);
         headerLayout->setObjectName("headerLayout");
-        headerLayout->setContentsMargins(15, 15, 15, 15);
+        headerLayout->setContentsMargins(0, 7, 0, 0);
         titleLabel = new QLabel(horizontalLayoutWidget);
         titleLabel->setObjectName("titleLabel");
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(titleLabel->sizePolicy().hasHeightForWidth());
+        titleLabel->setSizePolicy(sizePolicy);
+        titleLabel->setMargin(-1);
 
         headerLayout->addWidget(titleLabel);
 
@@ -69,11 +77,19 @@ public:
 
         descriptionLabel = new QLabel(horizontalLayoutWidget);
         descriptionLabel->setObjectName("descriptionLabel");
+        QSizePolicy sizePolicy1(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(descriptionLabel->sizePolicy().hasHeightForWidth());
+        descriptionLabel->setSizePolicy(sizePolicy1);
+        descriptionLabel->setWordWrap(true);
 
         contentLayout->addWidget(descriptionLabel);
 
         dueDateLabel = new QLabel(horizontalLayoutWidget);
         dueDateLabel->setObjectName("dueDateLabel");
+        dueDateLabel->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
+        dueDateLabel->setMargin(3);
 
         contentLayout->addWidget(dueDateLabel);
 

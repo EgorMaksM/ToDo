@@ -277,6 +277,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/calendarwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_calendarwidget.cpp",
+			null
+		],
+		[
 			"C:/Users/yehmak001/Documents/GitHub/ToDo/filestream.h",
 			"MU",
 			"EWIEGA46WW/moc_filestream.cpp",
@@ -378,6 +384,11 @@
 	"SETTINGS_FILE" : "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/ToDo_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/calendarwidget.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/filestream.cpp", "MU", null ],
 		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/main.cpp", "MU", null ],
 		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.cpp", "MU", null ],

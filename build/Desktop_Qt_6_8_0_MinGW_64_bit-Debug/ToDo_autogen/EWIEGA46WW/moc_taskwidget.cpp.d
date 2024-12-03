@@ -158,8 +158,10 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QFrame \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QSizeGrip \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizegrip.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \

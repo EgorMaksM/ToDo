@@ -176,6 +176,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpainterpath.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpalette.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpen.h \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpointingdevice.h \
@@ -203,9 +204,13 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QCalendarWidget \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QFrame \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGridLayout \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPlainTextEdit \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QScrollArea \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QSizeGrip \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QStackedWidget \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QTextEdit \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QTimeEdit \
@@ -220,11 +225,14 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgridlayout.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qplaintextedit.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qpushbutton.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscrollarea.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizegrip.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstackedwidget.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -469,6 +477,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/calendarwidget.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h

@@ -175,6 +175,7 @@ ToDo_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpainterpath.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpalette.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpen.h \
+	C:/Qt/6.8.0/mingw_64/include/QtGui/qpicture.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpixelformat.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpixmap.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpointingdevice.h \
@@ -202,9 +203,13 @@ ToDo_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QCalendarWidget \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QFrame \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGridLayout \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLabel \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPlainTextEdit \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QScrollArea \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QSizeGrip \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QStackedWidget \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QTextEdit \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QTimeEdit \
@@ -219,11 +224,14 @@ ToDo_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgridlayout.h \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlabel.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayout.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayoutitem.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qplaintextedit.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qpushbutton.h \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscrollarea.h \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizegrip.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstackedwidget.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -654,6 +662,8 @@ ToDo_autogen/timestamp: \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/moc_predefs.h \
+	C:/Users/yehmak001/Documents/GitHub/ToDo/calendarwidget.cpp \
+	C:/Users/yehmak001/Documents/GitHub/ToDo/calendarwidget.h \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/filestream.cpp \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/filestream.h \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/main.cpp \
@@ -665,6 +675,7 @@ ToDo_autogen/timestamp: \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.h \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/todo.cpp \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h \
+	C:/Users/yehmak001/Documents/GitHub/ToDo/calendarwidget.ui \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.ui \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.ui \
 	C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.ui \

@@ -13,6 +13,7 @@
 #include "todo.h"
 #include "newtaskwidget.h"
 #include "taskwidget.h"
+#include "calendarwidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -30,6 +31,7 @@ public:
 
     //QStackedWidget* stackedWidget;
     //newTaskWidget* newTask;
+    CalendarWidget* calendar;
     TaskWidget *todo1;
     QPushButton *green;
     QPushButton *yellow;

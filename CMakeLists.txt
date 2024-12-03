@@ -32,6 +32,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         filestream.h filestream.cpp
 
         taskwidget.h taskwidget.cpp taskwidget.ui
+        calendarwidget.h calendarwidget.cpp calendarwidget.ui
+
 
     )
 # Define target properties for Android with Qt 6 as:

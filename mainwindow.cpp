@@ -7,10 +7,13 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    calendar = new CalendarWidget(this);
+    calendar->setGeometry(0, 30, 1570, 1030);
     //stackedWidget = new QStackedWidget(this);
     //newTask = new newTaskWidget(this);
-    todo1 = new TaskWidget(this, "Name", "Description: LALALALALlalalala papapapapapa", QDateTime::currentDateTime(), 0);
-    todo1->setGeometry(500, 500, 430, 130);
+    //todo1 = new TaskWidget(this, "Bake a cake for mum", "Remember to buy cherries for it too! Her favourite cakes are vanilla ones. Also buy some apples, dad asked about them. And fridge is full of soup. Please finish it!", QDateTime::currentDateTime(), 0);
+    //todo1->setGeometry(500, 500, 430, 145);
 
     /*stackedWidget->setGeometry(0, 0, 1920, 1080);
     stackedWidget->setStyleSheet(QString("background-color:white;"));
@@ -22,7 +25,6 @@ MainWindow::MainWindow(QWidget *parent)
     dateInput->setSelectionMode(QCalendarWidget::SingleSelection);*/
 
     //stackedWidget->addWidget(todo1);
-
 }
 
 MainWindow::~MainWindow()

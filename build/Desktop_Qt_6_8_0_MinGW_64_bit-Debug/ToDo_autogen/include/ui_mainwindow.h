@@ -10,11 +10,8 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenu>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -25,9 +22,6 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QStatusBar *statusbar;
-    QMenuBar *menubar;
-    QMenu *menuFile;
-    QMenu *menuAbout;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -35,18 +29,9 @@ public:
             MainWindow->setObjectName("MainWindow");
         MainWindow->setEnabled(true);
         MainWindow->resize(1920, 1080);
+        MainWindow->setMaximumSize(QSize(16777215, 16777215));
         MainWindow->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
-        MainWindow->setStyleSheet(QString::fromUtf8("#centralwidget {\n"
-"	background-color: grey;\n"
-"}\n"
-"\n"
-"TaskWidget {\n"
-"	border-radius: 10px;\n"
-"}\n"
-"\n"
-"QFrame {\n"
-"	border-radius: 20px;\n"
-"}"));
+        MainWindow->setStyleSheet(QString::fromUtf8(""));
         MainWindow->setTabShape(QTabWidget::TabShape::Rounded);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
@@ -55,17 +40,6 @@ public:
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1920, 25));
-        menuFile = new QMenu(menubar);
-        menuFile->setObjectName("menuFile");
-        menuAbout = new QMenu(menubar);
-        menuAbout->setObjectName("menuAbout");
-        MainWindow->setMenuBar(menubar);
-
-        menubar->addAction(menuFile->menuAction());
-        menubar->addAction(menuAbout->menuAction());
 
         retranslateUi(MainWindow);
 
@@ -75,8 +49,6 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
-        menuAbout->setTitle(QCoreApplication::translate("MainWindow", "About", nullptr));
     } // retranslateUi
 
 };
