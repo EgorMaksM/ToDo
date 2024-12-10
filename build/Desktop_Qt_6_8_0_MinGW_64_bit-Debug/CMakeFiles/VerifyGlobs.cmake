@@ -45,14 +45,19 @@ set(OLD_GLOB
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_calendarwidget.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_newtaskwidget.cpp"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_proxyoverlay.cpp"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_smoothscrollarea.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_taskdisplay.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_taskwidget.cpp"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/qrc_fonts.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/mocs_compilation.cpp"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-RelWithDebInfo/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/calendarwidget.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/filestream.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/main.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.cpp"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/smoothscrollarea.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.cpp"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/todo.cpp"
   )
@@ -83,6 +88,8 @@ set(OLD_GLOB
   "C:/Users/yehmak001/Documents/GitHub/ToDo/filestream.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/proxyoverlay.h"
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/smoothscrollarea.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.h"
   "C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h"
   )
@@ -166,6 +173,7 @@ endif()
 # _directory_contents at C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/yehmak001/Documents/GitHub/ToDo/*.qrc")
 set(OLD_GLOB
+  "C:/Users/yehmak001/Documents/GitHub/ToDo/fonts.qrc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

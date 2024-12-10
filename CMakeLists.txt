@@ -33,6 +33,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         taskwidget.h taskwidget.cpp taskwidget.ui
         calendarwidget.h calendarwidget.cpp calendarwidget.ui
+        smoothscrollarea.h smoothscrollarea.cpp
+        proxyoverlay.h
+        fonts.qrc
 
 
     )

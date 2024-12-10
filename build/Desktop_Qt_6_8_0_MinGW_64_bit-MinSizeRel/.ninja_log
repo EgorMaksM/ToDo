@@ -1,0 +1,19 @@
+# ninja log v6
+13	869	7555410506264152	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-MinSizeRel/CMakeFiles/cmake.verify_globs	b872c2ba1603c27b
+875	3227	7555410536860065	ToDo_autogen/timestamp	9f88508124f5a979
+875	3227	7555410536860065	ToDo_autogen/mocs_compilation.cpp	9f88508124f5a979
+875	3227	7555410536860065	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-MinSizeRel/ToDo_autogen/timestamp	9f88508124f5a979
+875	3227	7555410536860065	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-MinSizeRel/ToDo_autogen/mocs_compilation.cpp	9f88508124f5a979
+3315	3559	7555410541501037	ToDo_autogen/EWIEGA46WW/qrc_fonts.cpp	446d49451cfb5dce
+3315	3559	7555410541501037	C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-MinSizeRel/ToDo_autogen/EWIEGA46WW/qrc_fonts.cpp	446d49451cfb5dce
+4159	4592	7555410547712554	CMakeFiles/ToDo.dir/ToDo_autogen/EWIEGA46WW/qrc_fonts.cpp.obj	760cd834114f613b
+3858	8134	7555410544697801	CMakeFiles/ToDo.dir/todo.cpp.obj	87cd3f17cd600d3
+4133	8738	7555410547463496	CMakeFiles/ToDo.dir/smoothscrollarea.cpp.obj	52f324bd1d8d3fa1
+3957	8926	7555410545692301	CMakeFiles/ToDo.dir/filestream.cpp.obj	ac50d6bf54ec3d76
+3593	9455	7555410542056601	CMakeFiles/ToDo.dir/main.cpp.obj	a9c93144191ec87f
+3633	9572	7555410542455402	CMakeFiles/ToDo.dir/mainwindow.cpp.obj	ea846fba12f12939
+4039	9600	7555410546514056	CMakeFiles/ToDo.dir/taskwidget.cpp.obj	86f84c544b7a552c
+3711	9607	7555410543230372	CMakeFiles/ToDo.dir/newtaskwidget.cpp.obj	524262187204e34f
+3559	9748	7555410541719194	CMakeFiles/ToDo.dir/ToDo_autogen/mocs_compilation.cpp.obj	afe31950af22220e
+4072	9895	7555410546850987	CMakeFiles/ToDo.dir/calendarwidget.cpp.obj	60de8fc2105f1fe4
+9896	10562	7555410605079089	ToDo.exe	f2a499f4b2cefe8f

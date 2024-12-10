@@ -1,21 +1,29 @@
 C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/moc_predefs.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QChildEvent \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QCoreApplication \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QDataStream \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QDateTime \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QDebug \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QFile \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QList \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QMetaType \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QPointF \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QPropertyAnimation \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QRect \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QScopedPointer \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QSize \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QSizeF \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QVariant \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QtGlobal \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qabstractanimation.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qarraydata.h \
@@ -50,6 +58,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qdatetime.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qeasingcurve.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qeventloop.h \
@@ -93,6 +102,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qpair.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qpoint.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qpropertyanimation.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qrefcount.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qregularexpression.h \
@@ -143,14 +153,17 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qurl.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qvariant.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qvariantanimation.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QColor \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/QFontDatabase \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QPainter \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QPainterPath \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QTransform \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/QWheelEvent \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qabstracttextdocumentlayout.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qbitmap.h \
@@ -206,11 +219,14 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGridLayout \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLabel \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLayout \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPlainTextEdit \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QScrollArea \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QSizeGrip \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QScrollBar \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QScroller \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QScrollerProperties \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QStackedWidget \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QTextEdit \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QTimeEdit \
@@ -218,6 +234,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractslider.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qcalendarwidget.h \
@@ -232,7 +249,9 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qplaintextedit.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscrollarea.h \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizegrip.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscrollbar.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscroller.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscrollerproperties.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstackedwidget.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -478,6 +497,9 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/calendarwidget.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/filestream.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/proxyoverlay.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/smoothscrollarea.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h

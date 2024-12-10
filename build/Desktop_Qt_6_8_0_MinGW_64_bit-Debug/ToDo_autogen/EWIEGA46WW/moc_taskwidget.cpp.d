@@ -1,11 +1,13 @@
 C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/EWIEGA46WW/moc_taskwidget.cpp: C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/ToDo_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QDateTime \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QPropertyAnimation \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qabstractanimation.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qarraydata.h \
@@ -36,6 +38,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qdatetime.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qeasingcurve.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qflags.h \
@@ -73,6 +76,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qpair.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qpoint.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qpropertyanimation.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qrefcount.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qscopedpointer.h \
@@ -120,6 +124,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qtypes.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qvariant.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qvariantanimation.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h \
@@ -157,11 +162,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QFrame \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QSizeGrip \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
-  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizegrip.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \

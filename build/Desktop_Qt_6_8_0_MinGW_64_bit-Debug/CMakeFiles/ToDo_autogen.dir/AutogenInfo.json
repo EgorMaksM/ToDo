@@ -268,7 +268,8 @@
 		"C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake",
 		"C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseArguments.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
+		"C:/Users/yehmak001/Documents/GitHub/ToDo/fonts.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/yehmak001/Documents/GitHub/ToDo",
 	"CROSS_CONFIG" : false,
@@ -298,6 +299,18 @@
 			"C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h",
 			"MU",
 			"EWIEGA46WW/moc_newtaskwidget.cpp",
+			null
+		],
+		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/proxyoverlay.h",
+			"MU",
+			"EWIEGA46WW/moc_proxyoverlay.cpp",
+			null
+		],
+		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/smoothscrollarea.h",
+			"MU",
+			"EWIEGA46WW/moc_smoothscrollarea.cpp",
 			null
 		],
 		[
@@ -394,6 +407,11 @@
 		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.cpp", "MU", null ],
 		[
 			"C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/smoothscrollarea.cpp",
 			"MU",
 			null
 		],

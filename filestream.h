@@ -17,10 +17,10 @@ public:
     {
     };
 
-    std::vector<ToDo> readAllTasks();
-    void writeTask(const ToDo& Task);
-    void writeTaskArray(const std::vector<ToDo>& taskArray);
-    void deleteTask(const ToDo& Task);
+    std::vector<ToDo*> readAllTasks();
+    void writeTask(ToDo* Task);
+    void writeTaskArray(std::vector<ToDo*> taskArray);
+    void deleteTask(ToDo* Task);
 
 private:
     QString FilePath;

@@ -10,12 +10,14 @@ TaskWidget::TaskWidget(QWidget *parent,
     : QFrame(parent)
     , ui(new Ui::TaskWidget)
     , flagColor(flagColor)
+    , dueDate(dueDate)
 {
     ui->setupUi(this);
 
     /* Main Components&Values Initialization */
     setTitle(title, title_color);
     setDescription(description, descr_color);
+    ui->descriptionLabel->setVisible(false);
     setDueDate(dueDate, dueDate_color);
 
     /* Graphics Setup */
@@ -24,16 +26,9 @@ TaskWidget::TaskWidget(QWidget *parent,
     ui->flag->setGeometry(0, 0, cornerRadii, height());
 
     /* Stylization */
-    ui->titleLabel->setFont(bahnschriftFont);
-    ui->descriptionLabel->setFont(bahnschriftFont);
-    ui->dueDateLabel->setFont(bahnschriftFont);
-
-    /* Drop-Shadow */
-    QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect(this);
-    shadow->setBlurRadius(15);
-    shadow->setOffset(5, 5);
-    shadow->setColor(QColor(0, 0, 0, 50));
-    setGraphicsEffect(shadow);
+    ui->titleLabel->setFont(titleFont);
+    ui->descriptionLabel->setFont(descrFont);
+    ui->dueDateLabel->setFont(dateFont);
 }
 
 TaskWidget::TaskWidget(QWidget *parent,
@@ -42,6 +37,7 @@ TaskWidget::TaskWidget(QWidget *parent,
            const int paletteIndex)
     : QFrame(parent)
     , ui(new Ui::TaskWidget)
+    , dueDate(dueDate)
 {
     ui->setupUi(this);
 
@@ -51,22 +47,17 @@ TaskWidget::TaskWidget(QWidget *parent,
     setDueDate(dueDate);
     setColorPalette(paletteIndex);
 
+    ui->descriptionLabel->setVisible(false);
+
     /* Graphics Setup */
     setAttribute(Qt::WA_TranslucentBackground);
     setStyleSheet("background-color: transparent;");
     ui->flag->setGeometry(0, 0, cornerRadii, height());
 
     /* Stylization */
-    ui->titleLabel->setFont(bahnschriftFont);
-    ui->descriptionLabel->setFont(bahnschriftFont);
-    ui->dueDateLabel->setFont(bahnschriftFont);
-
-    /* Drop-Shadow */
-    QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect(this);
-    shadow->setBlurRadius(15);
-    shadow->setOffset(5, 5);
-    shadow->setColor(QColor(0, 0, 0, 50));
-    setGraphicsEffect(shadow);
+    ui->titleLabel->setFont(titleFont);
+    ui->descriptionLabel->setFont(descrFont);
+    ui->dueDateLabel->setFont(dateFont);
 };
 
 TaskWidget::~TaskWidget()
@@ -78,20 +69,20 @@ TaskWidget::~TaskWidget()
 void TaskWidget::setTitle(const QString &title, const QColor &color)
 {
     ui->titleLabel->setText(title);
-    ui->titleLabel->setStyleSheet(QString("font-weight: bold; color: %1; font-size: 17pt;").arg(color.name()));
+    if (color != nullptr) ui->titleLabel->setStyleSheet(QString("color: %1;").arg(color.name()));
 }
 /* Change how "description" looks */
 void TaskWidget::setDescription(const QString &description, const QColor &color)
 {
-    ui->descriptionLabel->setText(QString("ⓘ %1").arg(description));
-    ui->descriptionLabel->setStyleSheet(QString("font-weight: 600; color: %1; font-size: 13pt;").arg(color.name()));
+    ui->descriptionLabel->setText(QString("• %1").arg(description));
+    if (color != nullptr) ui->descriptionLabel->setStyleSheet(QString("color: %1;").arg(color.name()));
 }
 
 /* Change how "dueDate" looks */
 void TaskWidget::setDueDate(const QDateTime &dueDate, const QColor &color)
 {
     ui->dueDateLabel->setText(QString("◦ %1").arg(dueDate.toString("dd/MM/yyyy HH:mm")));
-    ui->dueDateLabel->setStyleSheet(QString("font-weight: 600; font-size: 18pt; color: %1;").arg(color.name()));
+    if (color != nullptr) ui->dueDateLabel->setStyleSheet(QString("color: %1;").arg(color.name()));
 }
 
 /* Change how "flag" looks */
@@ -105,13 +96,13 @@ void TaskWidget::setFlagColor(const QColor &color)
 void TaskWidget::setColorPalette(const int paletteIndex)
 {
     QList<QColor>& palette = premadePalettes[paletteIndex];
-    ui->titleLabel->setStyleSheet(QString("font-weight: bold; color: %1; font-size: 20pt;").arg(palette[0].name()));
-    ui->descriptionLabel->setStyleSheet(QString("font-weight: 600; color: %1; font-size: 13pt;").arg(palette[1].name()));
-    ui->dueDateLabel->setStyleSheet(QString("font-weight: 600; font-size: 18pt; color: %1;").arg(palette[2].name()));
+    ui->titleLabel->setStyleSheet(QString("color: %1;").arg(palette[0].name()));
+    ui->descriptionLabel->setStyleSheet(QString("color: %1;").arg(palette[1].name()));
+    ui->dueDateLabel->setStyleSheet(QString("color: %1;").arg(palette[2].name()));
     setFlagColor(palette[3]);
 }
 
-/* Rounded corners logic&execution */
+/* Rounded corners logic & execution */
 void TaskWidget::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);
@@ -158,29 +149,3 @@ void TaskWidget::paintEvent(QPaintEvent *event)
     QFrame::paintEvent(event);
 }
 
-void TaskWidget::resizeEvent(QResizeEvent *event)
-{
-    QSize newSize = event->size();
-    QSize oldSize = event->oldSize();
-
-    int widthChange = newSize.width() - oldSize.width();
-
-    if (widthChange != 0)
-    {
-        newSize.setHeight(newSize.width() * relationsMatrix[0]);
-        qDebug() << newSize.width() << relationsMatrix[0];
-        cornerRadii = relationsMatrix[1] * newSize.width();
-        titleFont.setPointSize(newSize.width() * relationsMatrix[2]);
-        qDebug() << newSize.width() * relationsMatrix[2];
-        descrFont.setPointSize(relationsMatrix[3] * newSize.width());
-        dateFont.setPointSize(relationsMatrix[4] * newSize.width());
-    }
-
-    resize(newSize);
-    ui->titleLabel->setFont(titleFont);
-    ui->descriptionLabel->setFont(descrFont);
-    ui->dueDateLabel->setFont(dateFont);
-    update();
-
-    QWidget::resizeEvent(event);
-}

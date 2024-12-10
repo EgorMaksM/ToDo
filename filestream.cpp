@@ -1,15 +1,15 @@
 #include "filestream.h"
 
 /* Get an std::vector of all the existing tasks */
-std::vector<ToDo> FileStream::readAllTasks()
+std::vector<ToDo *> FileStream::readAllTasks()
 {
-    std::vector<ToDo> TaskArray;
+    std::vector<ToDo*> TaskArray;
     QFile file(FilePath);
     if (file.open(QIODevice::ReadOnly)) {
         QDataStream in(&file);
         while (!in.atEnd()) {
-            ToDo Task;
-            in >> Task.Name >> Task.Description >> Task.DateTime;
+            ToDo* Task;
+            in >> Task->Name >> Task->Description >> Task->DateTime;
             TaskArray.push_back(Task);
         }
         file.close();
@@ -21,12 +21,12 @@ std::vector<ToDo> FileStream::readAllTasks()
 }
 
 /* Add a task to static storage */
-void FileStream::writeTask(const ToDo& Task)
+void FileStream::writeTask(ToDo *Task)
 {
     QFile file(FilePath);
     if (file.open(QIODevice::Append)) {
         QDataStream out(&file);
-        out << Task.Name << Task.Description << Task.DateTime;
+        out << Task->Name << Task->Description << Task->DateTime;
         file.close();
         qDebug() << "Task written successfully.";
     } else {
@@ -35,13 +35,13 @@ void FileStream::writeTask(const ToDo& Task)
 }
 
 /* Write an std::vector of tasks to static storage after clearing it's contents */
-void FileStream::writeTaskArray(const std::vector<ToDo>& TaskArray)
+void FileStream::writeTaskArray(std::vector<ToDo*> TaskArray)
 {
     QFile file(FilePath);
     if (file.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
         QDataStream out(&file);
         for (const auto &Task : TaskArray) {
-            out << Task.Name << Task.Description << Task.DateTime;
+            out << Task->Name << Task->Description << Task->DateTime;
         }
         file.close();
         qDebug() << "Tasks written successfully.";
@@ -51,16 +51,17 @@ void FileStream::writeTaskArray(const std::vector<ToDo>& TaskArray)
 }
 
 /* Delete a given task from static storage */
-void FileStream::deleteTask(const ToDo& Task)
+void FileStream::deleteTask(ToDo* Task)
 {
     QFile file(FilePath);
 
-    std::vector<ToDo> vector = readAllTasks();
-    QList<ToDo> allObjects;
+    std::vector<ToDo*> vector = readAllTasks();
+    QList<ToDo*> allObjects;
     allObjects.reserve(vector.size());
     std::copy(vector.begin(), vector.end(), std::back_inserter(allObjects));
 
     allObjects.removeAll(Task);
+    delete Task;
 
     // Rewrite the file with the remaining objects
     writeTaskArray(std::vector(allObjects.constBegin(), allObjects.constEnd()));
