@@ -36,6 +36,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         smoothscrollarea.h smoothscrollarea.cpp
         proxyoverlay.h
         fonts.qrc
+        trianglebutton.h trianglebutton.cpp
+        monthcombobox.h monthcombobox.cpp
+        myspinbox.h
+        plusbutton.h plusbutton.cpp
+
 
 
     )

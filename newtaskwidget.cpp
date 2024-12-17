@@ -7,6 +7,19 @@ newTaskWidget::newTaskWidget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    ui->verticalLayout->addWidget(ui->pageName);
+    ui->verticalLayout->addWidget(ui->nameInputLabel);
+    ui->verticalLayout->addWidget(ui->nameInput);
+    ui->verticalLayout->addWidget(ui->descriptionInputLabel);
+    ui->verticalLayout->addWidget(ui->descriptionInput);
+    ui->verticalLayout->addWidget(ui->label);
+    ui->verticalLayout->addWidget(ui->timeEdit);
+    ui->verticalLayout->addWidget(ui->label_2);
+    ui->verticalLayout->addWidget(ui->dateEdit);
+    ui->verticalLayout->addWidget(ui->doneButton);
+
+    setLayout(ui->verticalLayout);
+
     this->show();
 
     connect(ui->doneButton, &QPushButton::clicked, this, &newTaskWidget::onDoneButtonClicked);

@@ -49,12 +49,13 @@ public:
         horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
         horizontalLayoutWidget->setGeometry(QRect(-1, -5, 201, 81));
         mainLayout = new QHBoxLayout(horizontalLayoutWidget);
-        mainLayout->setSpacing(0);
+        mainLayout->setSpacing(2);
         mainLayout->setObjectName("mainLayout");
         mainLayout->setSizeConstraint(QLayout::SizeConstraint::SetDefaultConstraint);
         mainLayout->setContentsMargins(0, 0, 0, 0);
         flag = new QFrame(horizontalLayoutWidget);
         flag->setObjectName("flag");
+        flag->setEnabled(false);
         flag->setMaximumSize(QSize(20, 145));
         flag->setFrameShape(QFrame::Shape::StyledPanel);
         flag->setFrameShadow(QFrame::Shadow::Raised);
@@ -64,15 +65,18 @@ public:
         contentLayout = new QVBoxLayout();
         contentLayout->setSpacing(0);
         contentLayout->setObjectName("contentLayout");
-        contentLayout->setContentsMargins(2, 0, 0, 3);
+        contentLayout->setContentsMargins(0, 0, 0, 3);
         headerLayout = new QHBoxLayout();
         headerLayout->setSpacing(0);
         headerLayout->setObjectName("headerLayout");
-        headerLayout->setContentsMargins(4, 0, 0, 0);
+        headerLayout->setContentsMargins(0, 0, 0, 0);
         titleLabel = new QLabel(horizontalLayoutWidget);
         titleLabel->setObjectName("titleLabel");
-        sizePolicy.setHeightForWidth(titleLabel->sizePolicy().hasHeightForWidth());
-        titleLabel->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(titleLabel->sizePolicy().hasHeightForWidth());
+        titleLabel->setSizePolicy(sizePolicy1);
         titleLabel->setMargin(-1);
 
         headerLayout->addWidget(titleLabel);
@@ -82,11 +86,11 @@ public:
 
         descriptionLabel = new QLabel(horizontalLayoutWidget);
         descriptionLabel->setObjectName("descriptionLabel");
-        QSizePolicy sizePolicy1(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(descriptionLabel->sizePolicy().hasHeightForWidth());
-        descriptionLabel->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(descriptionLabel->sizePolicy().hasHeightForWidth());
+        descriptionLabel->setSizePolicy(sizePolicy2);
         descriptionLabel->setWordWrap(true);
 
         contentLayout->addWidget(descriptionLabel);

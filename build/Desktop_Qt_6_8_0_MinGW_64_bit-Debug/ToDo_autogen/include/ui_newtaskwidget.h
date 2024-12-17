@@ -18,6 +18,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QTimeEdit>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -35,12 +36,19 @@ public:
     QLabel *label;
     QLabel *label_2;
     QPlainTextEdit *nameInput;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout;
 
     void setupUi(QWidget *newTaskWidget)
     {
         if (newTaskWidget->objectName().isEmpty())
             newTaskWidget->setObjectName("newTaskWidget");
         newTaskWidget->resize(430, 835);
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(newTaskWidget->sizePolicy().hasHeightForWidth());
+        newTaskWidget->setSizePolicy(sizePolicy);
         QFont font;
         font.setBold(false);
         newTaskWidget->setFont(font);
@@ -224,11 +232,11 @@ public:
         pageName = new QLabel(newTaskWidget);
         pageName->setObjectName("pageName");
         pageName->setGeometry(QRect(0, 0, 151, 41));
-        QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(pageName->sizePolicy().hasHeightForWidth());
-        pageName->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(pageName->sizePolicy().hasHeightForWidth());
+        pageName->setSizePolicy(sizePolicy1);
         QFont font2;
         font2.setFamilies({QString::fromUtf8("Segoe UI")});
         font2.setPointSize(18);
@@ -238,6 +246,8 @@ public:
         doneButton = new QPushButton(newTaskWidget);
         doneButton->setObjectName("doneButton");
         doneButton->setGeometry(QRect(0, 700, 131, 81));
+        sizePolicy1.setHeightForWidth(doneButton->sizePolicy().hasHeightForWidth());
+        doneButton->setSizePolicy(sizePolicy1);
         QFont font3;
         font3.setPointSize(25);
         font3.setBold(true);
@@ -255,6 +265,8 @@ public:
         timeEdit = new QTimeEdit(newTaskWidget);
         timeEdit->setObjectName("timeEdit");
         timeEdit->setGeometry(QRect(0, 300, 151, 51));
+        sizePolicy1.setHeightForWidth(timeEdit->sizePolicy().hasHeightForWidth());
+        timeEdit->setSizePolicy(sizePolicy1);
         QFont font4;
         font4.setPointSize(20);
         font4.setBold(true);
@@ -295,6 +307,12 @@ public:
         nameInput->setVerticalScrollBarPolicy(Qt::ScrollBarPolicy::ScrollBarAlwaysOff);
         nameInput->setHorizontalScrollBarPolicy(Qt::ScrollBarPolicy::ScrollBarAlwaysOff);
         nameInput->setLineWrapMode(QPlainTextEdit::LineWrapMode::NoWrap);
+        verticalLayoutWidget = new QWidget(newTaskWidget);
+        verticalLayoutWidget->setObjectName("verticalLayoutWidget");
+        verticalLayoutWidget->setGeometry(QRect(-1, -1, 431, 841));
+        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
 
         retranslateUi(newTaskWidget);
 

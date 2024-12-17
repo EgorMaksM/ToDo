@@ -296,9 +296,27 @@
 			null
 		],
 		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/monthcombobox.h",
+			"MU",
+			"EWIEGA46WW/moc_monthcombobox.cpp",
+			null
+		],
+		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/myspinbox.h",
+			"MU",
+			"EWIEGA46WW/moc_myspinbox.cpp",
+			null
+		],
+		[
 			"C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h",
 			"MU",
 			"EWIEGA46WW/moc_newtaskwidget.cpp",
+			null
+		],
+		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/plusbutton.h",
+			"MU",
+			"EWIEGA46WW/moc_plusbutton.cpp",
 			null
 		],
 		[
@@ -323,6 +341,12 @@
 			"C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h",
 			"MU",
 			"EWIEGA46WW/moc_todo.cpp",
+			null
+		],
+		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/trianglebutton.h",
+			"MU",
+			"EWIEGA46WW/moc_trianglebutton.cpp",
 			null
 		]
 	],
@@ -406,17 +430,28 @@
 		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/main.cpp", "MU", null ],
 		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/mainwindow.cpp", "MU", null ],
 		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/monthcombobox.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.cpp",
 			"MU",
 			null
 		],
+		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/plusbutton.cpp", "MU", null ],
 		[
 			"C:/Users/yehmak001/Documents/GitHub/ToDo/smoothscrollarea.cpp",
 			"MU",
 			null
 		],
 		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.cpp", "MU", null ],
-		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/todo.cpp", "MU", null ]
+		[ "C:/Users/yehmak001/Documents/GitHub/ToDo/todo.cpp", "MU", null ],
+		[
+			"C:/Users/yehmak001/Documents/GitHub/ToDo/trianglebutton.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

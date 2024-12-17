@@ -19,7 +19,6 @@ class TaskWidget : public QFrame
 public:
     Ui::TaskWidget *ui;
 
-    QWidget* ParentOverlay;
     QDateTime dueDate;
 
     explicit TaskWidget(QWidget *parent = nullptr,

@@ -8,12 +8,22 @@
 #include <QLayout>
 #include <QList>
 #include <QFontDatabase>
+#include <QComboBox>
+#include <QSpinBox>
+#include <QToolButton>
+#include <QDateTime>
+#include <QDialog>
 
+#include "trianglebutton.h"
+#include "monthcombobox.h"
+#include "myspinbox.h"
 #include "smoothscrollarea.h"
 #include "todo.h"
 #include "taskwidget.h"
 #include "proxyoverlay.h"
 #include "filestream.h"
+#include "plusbutton.h"
+#include "newtaskwidget.h"
 
 namespace Ui {
 class CalendarWidget;
@@ -29,11 +39,32 @@ public:
 
     ProxyOverlay* AddTask(ToDo* task);
     void DeleteTask(ProxyOverlay* proxy);
-    void FindWeek(std::vector<ToDo*> tasks, int WeekIndex = QDateTime::currentDateTime().date().weekNumber());
-    void SetWeek(int year = QDateTime::currentDateTime().date().year(), int weekNumber = QDateTime::currentDateTime().date().weekNumber());
+    void onDateChanged();
+    void onNextWeek();
+    void onPrevWeek();
+    void updateCalendar();
+    void setWeek(int index);
+    void onNewTask();
+
     std::array<std::array<QList<ProxyOverlay*>, 24>, 7> taskList;
+    QDateTime currentDate;
 
     QVBoxLayout *mainLayout;
+
+    QWidget *topWidget;
+    QVBoxLayout *topLayout;
+
+    QWidget *monthYearWidget;
+    QHBoxLayout *monthYearLayout;
+
+    QWidget *weekWidget;
+    QHBoxLayout *weekLayout;
+    MonthComboBox *monthComboBox;
+    MySpinBox *yearSpinBox;
+    TriangleButton *prevWeekButton;
+    QLabel* weekNumber;
+    TriangleButton *nextWeekButton;
+    PlusButton *newTask;
     QWidget *headerWidget;
     QHBoxLayout *headerLayout;
     SmoothScrollArea *scrollArea;

@@ -16,6 +16,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/QSize \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QSizeF \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QStringList \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QVariant \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QtGlobal \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
@@ -24,6 +25,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q23utility.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qabstractanimation.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qarraydata.h \
@@ -77,6 +79,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qhashfunctions.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qiodevicebase.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qitemselectionmodel.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qiterator.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qlatin1stringview.h \
@@ -105,6 +108,7 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qpropertyanimation.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qrefcount.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qregularexpression.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qset.h \
@@ -156,8 +160,11 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/QBrush \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QColor \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/QFont \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QFontDatabase \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/QMouseEvent \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QPainter \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QPainterPath \
   C:/Qt/6.8.0/mingw_64/include/QtGui/QTransform \
@@ -195,41 +202,70 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/6.8.0/mingw_64/include/QtGui/qrgba64.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qscreen.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qscreen_platform.h \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/qtextcursor.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qtextdocument.h \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/qtextformat.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qtextoption.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qtransform.h \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/qvalidator.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qvector2d.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qvectornd.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QAbstractButton \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QAbstractItemView \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QCalendarWidget \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QComboBox \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QFrame \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGridLayout \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLayout \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QScrollArea \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QScrollBar \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QScroller \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QScrollerProperties \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QSpinBox \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QStyledItemDelegate \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QToolButton \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractitemview.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractslider.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qboxlayout.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qcalendarwidget.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qcombobox.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgridlayout.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlineedit.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscrollarea.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscrollbar.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscroller.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscrollerproperties.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qslider.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qspinbox.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstyle.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstyleditemdelegate.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstyleoption.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabbar.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabwidget.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtoolbutton.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -471,7 +507,12 @@ C:/Users/yehmak001/Documents/GitHub/ToDo/build/Desktop_Qt_6_8_0_MinGW_64_bit-Deb
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/filestream.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/monthcombobox.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/myspinbox.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/newtaskwidget.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/plusbutton.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/proxyoverlay.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/smoothscrollarea.h \
   C:/Users/yehmak001/Documents/GitHub/ToDo/taskwidget.h \
-  C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h
+  C:/Users/yehmak001/Documents/GitHub/ToDo/todo.h \
+  C:/Users/yehmak001/Documents/GitHub/ToDo/trianglebutton.h

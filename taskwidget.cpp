@@ -58,6 +58,9 @@ TaskWidget::TaskWidget(QWidget *parent,
     ui->titleLabel->setFont(titleFont);
     ui->descriptionLabel->setFont(descrFont);
     ui->dueDateLabel->setFont(dateFont);
+
+    ui->titleLabel->setContentsMargins(10, 0, 0, 0);
+    ui->descriptionLabel->setContentsMargins(10, 0, 0, 0);
 };
 
 TaskWidget::~TaskWidget()

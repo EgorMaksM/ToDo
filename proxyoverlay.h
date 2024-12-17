@@ -27,7 +27,7 @@ public:
         /* Drop-Shadow */
         shadow = new QGraphicsDropShadowEffect(this);
         shadow->setBlurRadius(15);
-        shadow->setOffset(2, 1.5);
+        shadow->setOffset(0.5, 0.5);
         shadow->setColor(QColor(0, 0, 0, 50));
         setGraphicsEffect(shadow);
     }
@@ -35,7 +35,6 @@ public:
     void setOverlayWidget(TaskWidget *widget) {
         layout()->addWidget(widget);
         task = widget;
-        widget->ParentOverlay = this;
     }
 
     TaskWidget *task;
@@ -54,24 +53,24 @@ public:
 
         // Expand the widget
         animation = new QPropertyAnimation(this, "geometry");
-        animation->setDuration(200);  // 200ms duration
+        animation->setDuration(200);
         animation->setStartValue(originalGeometry);
         animation->setEndValue(newGeometry);
 
         QPropertyAnimation *blurAnimation = new QPropertyAnimation(shadow, "blurRadius");
         blurAnimation->setDuration(200);
         blurAnimation->setStartValue(shadow->blurRadius());
-        blurAnimation->setEndValue(18); // New blur radius
+        blurAnimation->setEndValue(18);
         blurAnimation->start(QAbstractAnimation::DeleteWhenStopped);
 
         QPropertyAnimation *colorAnimation = new QPropertyAnimation(shadow, "color");
         colorAnimation->setDuration(200);
         colorAnimation->setStartValue(shadow->color());
-        colorAnimation->setEndValue(QColor(0, 0, 0, 200)); // Darker color
+        colorAnimation->setEndValue(QColor(0, 0, 0, 200));
         colorAnimation->start(QAbstractAnimation::DeleteWhenStopped);
 
         connect(animation, &QPropertyAnimation::finished, this, &ProxyOverlay::onAnimationFinished);
-        task->ui->mainLayout->setContentsMargins(10, 10, 3, 0);
+        task->ui->mainLayout->setContentsMargins(0, 13, 0, 0);
         bResizing = true;
         animation->start(QAbstractAnimation::DeleteWhenStopped);
         task->ui->descriptionLabel->setVisible(true);
@@ -85,20 +84,20 @@ public:
                                   originalGeometry.width(), 30);
 
         animation = new QPropertyAnimation(this, "geometry");
-        animation->setDuration(300);  // 300ms duration
+        animation->setDuration(300);
         animation->setStartValue(originalGeometry);
         animation->setEndValue(newGeometry);
 
         QPropertyAnimation *blurAnimation = new QPropertyAnimation(shadow, "blurRadius");
         blurAnimation->setDuration(200);
         blurAnimation->setStartValue(shadow->blurRadius());
-        blurAnimation->setEndValue(15); // New blur radius
+        blurAnimation->setEndValue(15);
         blurAnimation->start(QAbstractAnimation::DeleteWhenStopped);
 
         QPropertyAnimation *colorAnimation = new QPropertyAnimation(shadow, "color");
         colorAnimation->setDuration(200);
         colorAnimation->setStartValue(shadow->color());
-        colorAnimation->setEndValue(QColor(0, 0, 0, 50)); // Darker color
+        colorAnimation->setEndValue(QColor(0, 0, 0, 50));
         colorAnimation->start(QAbstractAnimation::DeleteWhenStopped);
 
         connect(animation, &QPropertyAnimation::finished, this, &ProxyOverlay::onAnimationFinished);

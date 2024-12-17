@@ -21,6 +21,7 @@ public:
     void writeTask(ToDo* Task);
     void writeTaskArray(std::vector<ToDo*> taskArray);
     void deleteTask(ToDo* Task);
+    void clearAllTasks(std::vector<ToDo*>& tasks);
 
 private:
     QString FilePath;
